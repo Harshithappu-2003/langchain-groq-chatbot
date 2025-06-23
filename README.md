@@ -54,9 +54,10 @@ You can enhance this bot with:
 *     
 
 * * *
-![Screenshot 2025-06-23 135606](https://github.com/user-attachments/assets/c9cf7e64-fae2-45d0-a972-80c366afcd0e)
+![Screenshot 2025-06-23 150042](https://github.com/user-attachments/assets/0c6cc59c-50e6-48b4-af66-d547215c0b4c)
+![Screenshot 2025-06-23 150049](https://github.com/user-attachments/assets/23bbfc81-fc04-4bf5-b7c6-3d360bab7de9)
 
-![Screenshot 2025-06-23 135748](https://github.com/user-attachments/assets/120cc124-841a-49f7-bf9c-361eefb6fa0f)
+
 
 
 
