@@ -1,4 +1,4 @@
-🤖 **LangChain Groq Chatbot**  
+![Screenshot 2025-06-23 135748](https://github.com/user-attachments/assets/ebd46ca0-e940-415b-9961-69f53c807672)🤖 **LangChain Groq Chatbot**  
 
 A lightweight AI-powered chatbot built using **LangChain**, **Groq API**, and **LLaMA3** models.  
 It includes both a **CLI interface** and an extendable base for building a **UI-based chatbot**, ready to deploy on platforms like **Vercel**.
@@ -53,4 +53,9 @@ You can enhance this bot with:
 *     
 
 * * *
+![Screenshot 2025-06-23 135606](https://github.com/user-attachments/assets/c9cf7e64-fae2-45d0-a972-80c366afcd0e)
+
+![Screenshot 2025-06-23 135748](https://github.com/user-attachments/assets/120cc124-841a-49f7-bf9c-361eefb6fa0f)
+
+
 
