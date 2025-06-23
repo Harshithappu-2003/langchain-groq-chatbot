@@ -1,100 +1,123 @@
-🤖 LangChain Groq Chatbot
-=========================
+🤖 **LangChain Groq Chatbot**  
+A lightweight AI-powered chatbot built using **LangChain**, **Groq API**, and **LLaMA3** models.  
+It includes both a **CLI interface** and an extendable base for building a **UI-based chatbot**, ready to deploy on platforms like **Vercel**.
 
-A lightweight AI-powered chatbot built using **LangChain**, **Groq API**, and **LLaMA3** models. It includes both a **CLI interface** and an extendable foundation for building a **UI-based chatbot**, ready to deploy on platforms like **Vercel**.
+* * *
 
-🚀 Features
------------
+✨ **Features**
 
-*   ✨ Uses [Groq's blazing fast LLaMA3](https://console.groq.com/) for response generation
-    
-*   🔧 Built with [LangChain.js](https://js.langchain.com) and modular architecture
-    
-*   💬 CLI interface for seamless terminal interaction
-    
-*   🧠 Extensible prompt templating (prompt.js)
-    
-*   🧩 Built-in support for memory and chain pipelines
-    
-*   🌐 Deployable frontend-ready structure (Next.js or Vite can be added)
-    
-*   ☁️ Easily deployable on [Vercel](https://vercel.com/)
-    
+* *   ⚡ Uses [Groq's ultra-fast LLaMA3](https://console.groq.com/) for response generation
+*     
+* *   🧱 Built with [LangChain.js](https://js.langchain.com) and modular architecture
+*     
+* *   💬 CLI interface for terminal-based interaction
+*     
+* *   🧠 Prompt templating via `prompt-chat.js`
+*     
+* *   🔁 Chain + memory pipeline support
+*     
+* *   🌐 Frontend-ready structure (can plug into Next.js or Vite)
+*     
+* *   ☁️ Easy deployment on [Vercel](https://vercel.com/)
+*     
 
-📁 Project Structure
---------------------
+* * *
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   bashCopyEditLangChain-GroqBot/  ├── chat.js           # Core chatbot logic (uses prompt + model)  ├── cli-chat.js       # Interactive CLI chat interface  ├── prompt-chat.js    # Prompt template file  ├── memory.js         # (Optional) Memory setup using BufferMemory  ├── .env              # Environment variables (Groq API key)  ├── package.json  └── README.md   `
+📁 **Project Structure**
 
-🔐 .env Setup
--------------
+bash
 
-Create a .env file in the root directory:
+CopyEdit
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   iniCopyEditGROQ_API_KEY=your_groq_api_key_here   `
+`LangChain-GroqBot/ ├── chat.js          # Core chat logic (prompt → model) ├── cli-chat.js      # CLI chat interface ├── prompt-chat.js   # Prompt template logic ├── memory.js        # (Optional) BufferMemory config ├── .env             # Groq API Key ├── package.json └── README.md`
 
-Get your API key from: [https://console.groq.com/keys](https://console.groq.com/keys)
+* * *
 
-🛠️ Installation
-----------------
+🔐 **.env Setup**  
+Create a `.env` file in the root folder with the following:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   bashCopyEditgit clone https://github.com/Harshithappu-2003/langchain-groq-chatbot.git  cd langchain-groq-chatbot  npm install   `
+ini
 
-💻 Usage
---------
+CopyEdit
 
-### 🧪 Run chat.js (Single prompt test)
+`GROQ_API_KEY=your_groq_api_key_here`
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   bashCopyEditnode chat.js   `
+Get your API key from 👉 [https://console.groq.com/keys](https://console.groq.com/keys)
 
-### 💬 Run CLI chat
+* * *
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   bashCopyEditnode cli-chat.js   `
+🛠️ **Installation**
 
-Type your input and get responses in real-time.Type exit to quit.
+bash
 
-🌐 Deployment (Frontend UI on Vercel)
--------------------------------------
+CopyEdit
 
-This repo supports easy frontend integration.
+`git clone https://github.com/Harshithappu-2003/langchain-groq-chatbot.git cd langchain-groq-chatbot npm install`
 
-### Steps:
+* * *
 
-1.  Create a new Vercel project from your GitHub repo.
-    
-2.  Add your .env key in **Vercel dashboard → Project Settings → Environment Variables**
-    
-3.  Add a frontend (like Next.js or plain HTML/JS) to call a backend route that invokes the LangChain Groq chain
-    
-4.  Deploy!
-    
+💻 **Usage**
 
-✅ If you're using just the CLI/Node.js features, Vercel isn't required.
+▶️ Run once:
 
-🧠 Extending Features
----------------------
+nginx
 
-You can extend the chatbot with:
+CopyEdit
 
-*   Chat memory (BufferMemory)
-    
-*   File uploads (PDF/Q&A with LangChain tools)
-    
-*   Vector search (e.g., Pinecone, ChromaDB)
-    
-*   Web UI (React/Vite/Next.js + Tailwind)
-    
-*   Model switcher (Groq, OpenAI, Gemini, Claude via LangChain)
-    
+`node chat.js`
 
-🧩 Example Prompt Logic
------------------------
+💬 Start CLI chatbot:
 
-Defined in prompt-chat.js:
+nginx
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   jsCopyEditexport const chatPrompt = ChatPromptTemplate.fromMessages([    ["system", "You are a helpful AI assistant."],    ["human", "{input}"],  ]);   `
+CopyEdit
 
-Used via LangChain pipeline in chat.js.
+`node cli-chat.js`
 
-📸 Screenshot
-![Screenshot 2025-06-23 135748](https://github.com/user-attachments/assets/fad87cfe-39e5-4a22-8694-e11bef5ec591)
+Type your message and get AI responses in real time.  
+Type `exit` to quit.
+
+* * *
+
+🚀 **Deploying UI on Vercel**
+
+This project supports adding a frontend UI. Steps:
+
+1. 1.  🧭 Push to GitHub
+1.     
+1. 2.  🔗 Create a new project on [vercel.com](https://vercel.com/) from your GitHub repo
+1.     
+1. 3.  🔑 Add your API key in Project Settings → Environment Variables (`GROQ_API_KEY`)
+1.     
+1. 4.  💻 Add frontend (Next.js, React, or plain HTML/JS)
+1.     
+1. 5.  ✅ Deploy
+1.     
+
+📝 _Note: If you're only using CLI, Vercel isn't needed._
+
+* * *
+
+🧠 **Extending the Chatbot**
+
+You can enhance this bot with:
+
+* *   🧠 Chat memory (`BufferMemory`)
+*     
+* *   📄 File upload & Q&A (PDFs, text, etc.)
+*     
+* *   🔍 Vector search (e.g., Pinecone, ChromaDB)
+*     
+* *   🖥️ Web UI using React, Vite, or Next.js
+*     
+* *   🔄 Model switcher (Groq, OpenAI, Gemini, Claude)
+*     
+
+* * *
+
+🧩 **Example Prompt Setup**  
+Defined in `prompt-chat.js`:
+js
+`["system", "You are a helpful AI assistant."] ["human", "{input}"]`
+
+Used in `chat.js` via LangChain’s RunnableSequence.
