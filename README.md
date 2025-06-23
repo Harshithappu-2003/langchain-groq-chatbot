@@ -1,4 +1,5 @@
 🤖 **LangChain Groq Chatbot**  
+
 A lightweight AI-powered chatbot built using **LangChain**, **Groq API**, and **LLaMA3** models.  
 It includes both a **CLI interface** and an extendable base for building a **UI-based chatbot**, ready to deploy on platforms like **Vercel**.
 
