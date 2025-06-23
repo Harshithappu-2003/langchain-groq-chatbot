@@ -23,20 +23,16 @@ It includes both a **CLI interface** and an extendable base for building a **UI-
 
 * * *
 
-📁 **Project Structure**
+## 📁 Project Structure
 
-bash
-
-CopyEdit
-
-# LangChain-GroqBot/ ├── chat.js          
-# Core chat logic (prompt → model) ├── cli-chat.js     
-# CLI chat interface ├── prompt-chat.js   
-# Prompt template logic ├── memory.js        
-# (Optional) BufferMemory config ├── .env            
-# Groq API Key ├── package.json └── README.md`
-
-* * *
+LangChain-GroqBot/
+├── chat.js # Core chat logic (prompt → model)
+├── cli-chat.js # CLI chat interface
+├── prompt-chat.js # Prompt template logic
+├── memory.js # (Optional) BufferMemory config
+├── .env # Groq API Key
+├── package.json
+└── README.md
 
 
 
