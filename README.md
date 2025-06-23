@@ -1,4 +1,5 @@
-![Screenshot 2025-06-23 135748](https://github.com/user-attachments/assets/ebd46ca0-e940-415b-9961-69f53c807672)🤖 **LangChain Groq Chatbot**  
+
+🤖 **LangChain Groq Chatbot**  
 
 A lightweight AI-powered chatbot built using **LangChain**, **Groq API**, and **LLaMA3** models.  
 It includes both a **CLI interface** and an extendable base for building a **UI-based chatbot**, ready to deploy on platforms like **Vercel**.
